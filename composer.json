@@ -1,0 +1,39 @@
+{
+    "name": "psc-acme/loader-user",
+    "description": "Package loader-user for psc-acme organization",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\LoaderUser\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.3",
+        "firebase/php-jwt": "^6.0",
+        "symfony/lock": "^7.0",
+        "psc-acme/scheduler-auth": "^1.0",
+        "psc-acme/manager-auth": "^1.0"
+    },
+    "require-dev": {
+        "phpstan/phpstan-symfony": "^1.0",
+        "friendsofphp/php-cs-fixer": "^3.0"
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
